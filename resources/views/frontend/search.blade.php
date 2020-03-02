@@ -1,4 +1,4 @@
-@extends('templates.frontend.master')
+@extends('frontend.template.master')
 @section('title','Search')
 @section('content')
 <div class="container">

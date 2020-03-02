@@ -22,6 +22,10 @@ Route::post('login', 'chkLoginController@postLogin')->name('postLogin');
 
 Route::post('logout', 'chkLoginController@getLogout')->name('logout');
 
+Route::group(['prefix' => 'admin', 'namespace' => 'Backend'], function () {
+    Route::resource('cities', 'CityController');
+});
+
 Route::get('admin', 'DashBoardController@index')->name('admin')->middleware('checkAdminLogin');
 
 // route admin/user

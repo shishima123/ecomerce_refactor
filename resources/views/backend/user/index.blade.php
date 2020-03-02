@@ -1,9 +1,9 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Management User')
 @section('content')
 @section('header','users management')
-@include('templates.Admin.error')
-@include('templates.Admin.flash_message')
+@include('Backend.template.error')
+@include('Backend.template.flash_message')
 
 {{-- Button Show Create --}}
 <div class="d-flex justify-content-end">

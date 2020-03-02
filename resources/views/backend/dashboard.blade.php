@@ -1,4 +1,4 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Dashboard')
 @section('header','Dashboard')
 @section('content')

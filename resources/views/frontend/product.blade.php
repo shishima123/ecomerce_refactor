@@ -1,9 +1,9 @@
-@extends('templates.frontend.master')
+@extends('frontend.template.master')
 @section('title')
 {!! $product->name !!} - Electro Website
 @endsection
 @section('content')
-@include('templates.Admin.flash_message')
+@include('Backend.template.flash_message')
 <div class="section">
 	<div class="container">
 		<div class="row">

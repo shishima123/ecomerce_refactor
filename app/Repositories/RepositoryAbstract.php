@@ -8,12 +8,13 @@ namespace App\Repositories;
  */
 abstract class RepositoryAbstract implements RepositoryInterface
 {
-
     // initial variable model
     protected $model;
+    protected CONST EMPTY_STRING = "";
 
     /**
      * Function construct
+     * @throws mixed
      */
     public function __construct()
     {
@@ -28,7 +29,7 @@ abstract class RepositoryAbstract implements RepositoryInterface
 
     /**
      * Set model
-     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     * @throws mixed
      */
     public function setModel()
     {
@@ -46,6 +47,24 @@ abstract class RepositoryAbstract implements RepositoryInterface
     public function all($columns = ['*'])
     {
         return $this->model->all($columns);
+    }
+
+    /**
+     * Function search get all data with search and pagination
+     *
+     * @param string $search
+     * @param array $columns
+     * @return mixed
+     */
+    public function getData($search = '', $columns = [])
+    {
+        // get data from config file
+        $limit = config('constants.page.per_page');
+        $query = $this->model->orderBy('id','desc');
+        if ($search != self::EMPTY_STRING) {
+            $query ->whereLike($columns, $search);
+        }
+        return $query->paginate($limit);
     }
 
     /**

@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
  */
 class BackendController extends Controller
 {
-    protected $pagination;
+    protected $limit;
     protected $backendUrl;
 
     /**
@@ -16,7 +16,7 @@ class BackendController extends Controller
      */
     public function __construct()
     {
-        $this->pagination = config('constants.backend.pagination');
+        $this->limit = config('constants.backend.pagination');
         $this->backendUrl = ('constants.backend.url');
     }
 }

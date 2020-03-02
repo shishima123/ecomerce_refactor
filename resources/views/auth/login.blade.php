@@ -1,5 +1,5 @@
 @extends('auth.master')
-@include('templates.Admin.error')
+@include('Backend.template.error')
 @section('title',"Login - Electro")
 @section('content')
 @if (session('flash_message_title'))

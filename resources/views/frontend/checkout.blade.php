@@ -1,4 +1,4 @@
-@extends('templates.frontend.master')
+@extends('frontend.template.master')
 @section('title','Checkout')
 @section('content')
 

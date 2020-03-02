@@ -1,8 +1,8 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Management Category')
 @section('header','Categories management')
 @section('content')
-@include('templates.Admin.error')
+@include('Backend.template.error')
 
 {{-- Create Category --}}
 <div class="mb-4" id="layoutCreate">
