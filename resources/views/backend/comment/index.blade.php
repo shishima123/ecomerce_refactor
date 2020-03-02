@@ -1,8 +1,8 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Management comment')
 @section('header','comment management')
 @section('content')
-@include('templates.Admin.flash_message')
+@include('Backend.template.flash_message')
 
 {{-- Table Order --}}
 <table class="table table-sm table-bordered table-hover mt-3 table-striped">

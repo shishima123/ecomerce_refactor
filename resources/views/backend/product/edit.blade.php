@@ -1,4 +1,4 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Management Product')
 @section('ckeditor')
 <script type="text/javascript" src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
@@ -12,8 +12,8 @@
 @endsection
 @section('content')
 @section('header','Products management')
-@include('templates.Admin.error')
-@include('templates.Admin.flash_message')
+@include('Backend.template.error')
+@include('Backend.template.flash_message')
 
 {{-- Edit Product --}}
 <div class="w-100">

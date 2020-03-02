@@ -1,7 +1,7 @@
-@extends('templates.frontend.master')
+@extends('frontend.template.master')
 @section('title','Electro - Home Page')
 @section('content')
-@include('templates.Admin.flash_message')
+@include('Backend.template.flash_message')
 <!-- NEW PRODUCT -->
 <div class="section">
     <!-- container -->

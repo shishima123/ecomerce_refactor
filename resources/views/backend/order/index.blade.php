@@ -1,8 +1,8 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Management Order')
 @section('header','orders management')
 @section('content')
-@include('templates.Admin.flash_message')
+@include('Backend.template.flash_message')
 
 {{-- Status Order --}}
 <p class="text-uppercase font-weight-bold">{{ $type or 'all' }} orders</p>

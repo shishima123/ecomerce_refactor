@@ -1,4 +1,4 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Management Order')
 @section('header','orders management')
 @section('content')

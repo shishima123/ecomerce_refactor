@@ -1,8 +1,8 @@
-@extends('templates.Admin.master')
+@extends('Backend.template.master')
 @section('title','Admin Page - Edit User')
 @section('header','users management')
 @section('content')
-@include('templates.Admin.error')
+@include('Backend.template.error')
 
 <div class="row">
     <div class="col-4 text-center">
